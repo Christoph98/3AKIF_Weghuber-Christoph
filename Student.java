@@ -4,7 +4,8 @@ public class Student
     private int alter;
     private boolean Matura;
     private boolean mannlich;
-
+    private String Religion;
+    
     public Student()
     {
         setName("Thomas");
@@ -62,5 +63,15 @@ public class Student
     public void printStudent()
     {
         System.out.println("Student:\t" + name + "\t" + alter + "\t" + mannlich);
+    }
+    
+    public String Religion()
+    {
+        return Religion;
+    }
+    
+    public void setReligion(String neuReligion)
+    {
+        Religion = neuReligion;
     }
 }
