@@ -2,8 +2,8 @@ public class Student
 {
     private String name;
     private int alter;
-    private boolean Matura;
-    private String Religion;
+    private boolean matura;
+    private String religion;
     
     public Student(String neuName, int neuAlter, String neuReligion, boolean neuMatura)
     {
@@ -13,19 +13,19 @@ public class Student
         setMatura (neuMatura);
     }
 
-    public void setName(String neuname)
+    public void setName(String neuName)
     {
-        neuname = name;
+        name = neuName;
     }
 
-    public void setAlter(int neualter)
+    public void setAlter(int neuAlter)
     {
-        neualter = alter;
+        alter = neuAlter;
     }
     
     public void setMatura(boolean neuMatura)
     {
-        Matura = neuMatura;
+        matura = neuMatura;
     }
 
     public String getName()
@@ -40,16 +40,16 @@ public class Student
     
     public boolean getMatura()
     {
-        return Matura;
+        return matura;
     }
     
-    public String Religion()
+    public String religion()
     {
-        return Religion;
+        return religion;
     }
 
     public void setReligion(String neuReligion)
     {
-        Religion = neuReligion;
+        religion = neuReligion;
     }
 }
