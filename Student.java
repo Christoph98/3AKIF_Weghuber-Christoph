@@ -3,36 +3,24 @@ public class Student
     private String name;
     private int alter;
     private boolean Matura;
-    private boolean mannlich;
     private String Religion;
     
-    public Student()
+    public Student(String neuName, int neuAlter, String neuReligion, boolean neuMatura)
     {
-        setName("Thomas");
-        setAlter(40);
-        setMannlich(true);
+        setName (neuName);
+        setAlter (neuAlter);
+        setReligion (neuReligion);
+        setMatura (neuMatura);
     }
 
-    public Student(String name, int alter, boolean mannlich)
+    public void setName(String neuname)
     {
-        setName(name);
-        setAlter(alter);
-        setMannlich(mannlich);
+        neuname = name;
     }
 
-    public void setName(String name)
+    public void setAlter(int neualter)
     {
-        this.name = name;
-    }
-
-    public void setAlter(int alter)
-    {
-        this.alter = alter;
-    }
-
-    public void setMannlich(boolean mannlich)
-    {
-        this.mannlich = mannlich;
+        neualter = alter;
     }
     
     public void setMatura(boolean neuMatura)
@@ -54,22 +42,12 @@ public class Student
     {
         return Matura;
     }
-
-    public boolean getMannlich()
-    {
-        return mannlich;
-    }
-
-    public void printStudent()
-    {
-        System.out.println("Student:\t" + name + "\t" + alter + "\t" + mannlich);
-    }
     
     public String Religion()
     {
         return Religion;
     }
-    
+
     public void setReligion(String neuReligion)
     {
         Religion = neuReligion;
